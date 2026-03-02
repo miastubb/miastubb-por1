@@ -26,7 +26,7 @@ export function initRouter() {
   section.scrollIntoView({ behavior: "smooth", block: "start" });
   setActiveLink(route);
 
-  // Update active state on scroll too (nice professional touch)
+  // Update active state on scroll too
   const observer = new IntersectionObserver(
     (entries) => {
       const visible = entries.find((e) => e.isIntersecting);
