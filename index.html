@@ -1,0 +1,215 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio showcasing Front-End Development projects: RainyDays, JavaScript 1, and Semester Project 1."
+    />
+    <title>Mia Stubb-Olsen | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/components/nav.css" />
+    <link rel="stylesheet" href="./css/components/buttons.css" />
+    <link rel="stylesheet" href="./css/components/cards.css" />
+    <link rel="stylesheet" href="./css/pages/home.css" />
+
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">●</span>
+          <span class="brand__name">Mia Stubb-Olsen</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary navigation" id="site-nav"></nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HOME -->
+      <section class="section section--hero" id="home" data-route="home">
+        <div class="container hero">
+          <div class="hero__left">
+            <p class="eyebrow">Front-End Development Portfolio</p>
+            <h1 class="hero__title">
+              Minimal, accessible, and
+              <span class="accent">production-ready</span>
+              .
+            </h1>
+            <p class="hero__lead">
+              On a journey to build clean, maintainable front-end systems with a
+              focus on accessibility and professional documentation. This
+              portfolio highlights projects that demonstrate my commitment to
+              quality and continuous improvement.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects" data-link>
+                View projects
+              </a>
+              <a class="btn btn--ghost" href="#documents" data-link>
+                CV & documents
+              </a>
+            </div>
+
+            <ul class="hero__meta" aria-label="Highlights">
+              <li>Vanilla JS SPA</li>
+              <li>WCAG-minded UI</li>
+              <li>Git workflow + documentation</li>
+            </ul>
+          </div>
+
+          <div class="hero__frame">
+            <img
+              src="./assets/thumbnails/profile.webp"
+              alt="Portrait of Mia Stubb-Olsen"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects" data-route="projects">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__lead">
+              Three core projects from the program — improved and prepared for
+              professional presentation.
+            </p>
+          </header>
+
+          <div class="card-grid" id="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT / REFLECTION -->
+      <section class="section" id="about" data-route="about">
+        <div class="container two-col">
+          <header class="section__header">
+            <h2 class="section__title">About</h2>
+            <p class="section__lead">
+              I enjoy building structured front-end systems and documenting
+              decisions clearly. I’m especially interested in QA-minded
+              workflows and clean UI architecture.
+            </p>
+          </header>
+
+          <div class="panel">
+            <h3 class="panel__title">Focus areas</h3>
+            <ul class="list">
+              <li>Semantic HTML + accessible forms/components</li>
+              <li>Design tokens (CSS variables) and consistent UI systems</li>
+              <li>Modular JavaScript and predictable state handling</li>
+              <li>Professional documentation (README + reflection)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCUMENTS -->
+      <section class="section" id="documents" data-route="documents">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Documents</h2>
+            <p class="section__lead">
+              CV, cover letter, and the combined reflection PDF.
+            </p>
+          </header>
+
+          <div class="doc-grid">
+            <a
+              class="doc-card"
+              href="./assets/docs/cv.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              <h3 class="doc-card__title">CV / Resume</h3>
+              <p class="doc-card__text">Latest version (PDF).</p>
+              <span class="doc-card__cta">Open →</span>
+            </a>
+
+            <a
+              class="doc-card"
+              href="./assets/docs/cover-letter.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              <h3 class="doc-card__title">Cover Letter</h3>
+              <p class="doc-card__text">Tailored introduction (PDF).</p>
+              <span class="doc-card__cta">Open →</span>
+            </a>
+
+            <a
+              class="doc-card"
+              href="./assets/docs/reflections.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              <h3 class="doc-card__title">Project Reflections</h3>
+              <p class="doc-card__text">
+                Reflections + improvement commit links.
+              </p>
+              <span class="doc-card__cta">Open →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact" data-route="contact">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__lead">
+              Links for collaboration and opportunities.
+            </p>
+          </header>
+
+          <div class="contact">
+            <a
+              class="link"
+              href="https://github.com/miastubb"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub →
+            </a>
+            <a class="link" href="mailto:your.email@example.com">Email →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p class="muted">
+          ©
+          <span id="year"></span>
+          Mia Stubb-Olsen
+        </p>
+        <p class="muted">Built with HTML, CSS, and Vanilla JavaScript.</p>
+      </div>
+    </footer>
+  </body>
+</html>
