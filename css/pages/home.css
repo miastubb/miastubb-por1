@@ -51,7 +51,7 @@
   display: flex;
   gap: var(--space-4);
   flex-wrap: wrap;
-  color: var(--color-text-subtle);
+  color: var(--color-text-secondary);
   font-size: var(--fs-300);
 }
 
